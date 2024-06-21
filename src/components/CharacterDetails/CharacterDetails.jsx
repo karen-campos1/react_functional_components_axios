@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import styles from './CharacterDetails.module.css';
 
+
+// add count - metrics for comic details ... coming
+//add id to nav / jump down to description #
 const CharacterDetails = ({ characterId, onClose }) => {
     const [character, setCharacter] = useState(null);
 

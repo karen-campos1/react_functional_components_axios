@@ -20,6 +20,8 @@
     justify-content: flex-start; 
     align-items: center;
     text-align: center;
+    padding: 5 px; /* Padding inside each card */
+    margin: 25px;
 }
 
 .characterItem h2 {

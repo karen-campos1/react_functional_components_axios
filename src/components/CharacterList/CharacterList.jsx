@@ -6,14 +6,14 @@ const CharacterList = ({ onCharacterSelect }) => {
     const [characters, setCharacters] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [totalPages, setTotalPages] = useState(0);
-    const itemsPerPage = 20;
+    const itemsPerPage = 21;
     const maxPageButtons = 10; // Maximum number of page buttons to display at once
 
     const fetchCharacters = async (page) => {
         const PUBLIC_KEY = '69cf9e7504dd40f4c331a1e19a26ae19';
         const HASH = 'a4be5d1619e0dc6b3af4a6cb42a267f8';
         const offset = (page - 1) * itemsPerPage;
-        const url = `https://gateway.marvel.com/v1/public/characters?ts=1&apikey=${PUBLIC_KEY}&hash=${HASH}&offset=${offset}`;
+        const url = `https://gateway.marvel.com/v1/public/characters?ts=1&apikey=${PUBLIC_KEY}&hash=${HASH}&offset=${offset}&limit=${itemsPerPage}`;
 
         try {
             const response = await axios.get(url);
@@ -88,4 +88,3 @@ const CharacterList = ({ onCharacterSelect }) => {
 };
 
 export default CharacterList;
-
