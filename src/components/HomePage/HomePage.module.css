@@ -1,0 +1,18 @@
+.homePage {
+    position: relative;
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Optional: Add some padding around the video */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.video {
+    width: 100%;
+    max-width: 1200px; /* Adjust the max width as needed */
+    height: auto;
+    aspect-ratio: 16 / 9; /* Maintain the aspect ratio */
+    border: none;
+}

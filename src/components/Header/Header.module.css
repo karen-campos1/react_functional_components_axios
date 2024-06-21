@@ -1,0 +1,38 @@
+.header {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e62429;
+    padding: 20px 20px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 75px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Comic Neue', cursive;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.navLink {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navLink:hover {
+    color: #ddd;
+}
